@@ -7,11 +7,17 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        exo: ['Exo', 'sans-serif'],
+      },
+      fontWeight: {
+        extrabold: '800',
+        medium: '500',
+        black: '900',
+        semibold: '600',
+        extralight: '200',
       },
     },
   },
   plugins: [],
-};
+}

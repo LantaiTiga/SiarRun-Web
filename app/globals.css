@@ -1,27 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital@1&display=swap'); /*regular*/
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,800&display=swap'); /*extrabold-italic*/
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@800&display=swap'); /*extrabold*/
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,500&display=swap'); /*medium*/
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,900&display=swap'); /*black-italic*/
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@600&display=swap'); /*semi-bold*/
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@200&display=swap'); /*extra-light*/
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,600&display=swap'); /*semi-bold-italic*/
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Regular Italic */
+.regular-italic {
+    font-family: 'Exo', sans-serif;
+    font-style: italic;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Extra Bold Italic */
+.extrabold-italic {
+    font-family: 'Exo', sans-serif;
+    font-weight: 800;
+    font-style: italic;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Extra Bold */
+.extrabold {
+    font-family: 'Exo', sans-serif;
+    font-weight: 800;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Medium Italic */
+.medium-italic {
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Black Italic */
+.black-italic {
+    font-family: 'Exo', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* Semi Bold */
+.semi-bold {
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+}
+
+/* Extra Light */
+.extra-light {
+    font-family: 'Exo', sans-serif;
+    font-weight: 200;
+}
+
+/* Semi Bold Italic */
+.semi-bold-italic {
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    font-style: italic;
 }
