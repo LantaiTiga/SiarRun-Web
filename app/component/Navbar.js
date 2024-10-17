@@ -1,8 +1,6 @@
-'use client'
 import React from 'react'
 import Image from 'next/image'
 import Logo from '../public/Logo.svg'
-import { useEffect, useState } from 'react'; // Import useEffect and useState
 
 const Navbar = () => {
   return (

@@ -1,6 +1,5 @@
 import React from 'react'
 import HeroImg from '../public/Hero.png'
-import HeroTitle from '../public/TitleHero.svg'
 import Image from 'next/image'
 
 const Hero = () => {
