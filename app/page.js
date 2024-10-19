@@ -1,6 +1,9 @@
 import Navbar from "./component/Navbar";
 import Hero from "./component/Hero";
 import AboutUs from "./component/AboutUs";
+import Timeline from "./component/Timeline";
+import Registration from "./component/Registration";
+
 
 export default function Home() {
   return (    
@@ -9,6 +12,8 @@ export default function Home() {
       <Navbar/>
       <Hero/>
       <AboutUs/>
+      <Timeline/>
+      <Registration/>
     </div>
     </>
   );
