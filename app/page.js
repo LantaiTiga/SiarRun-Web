@@ -4,6 +4,7 @@ import AboutUs from "./component/AboutUs";
 import Timeline from "./component/Timeline";
 import Registration from "./component/Registration";
 import FAQ from "./component/FAQ";
+import Footer from "./component/Footer";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Timeline/>
       <Registration/>
       <FAQ/>
+      <Footer/>
     </div>
     </>
   );

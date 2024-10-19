@@ -6,10 +6,10 @@ import Image from 'next/image'
 
 const Timeline = () => {
   return (
-    <div className='flex flex-col px-[23px] sm:px-[58px] md:pt-[156px] sm:pt-[75px]'>
-      <section className='justify-center justify-items-center pt-[70px] md:pb-[70px]'> 
-      <h1 className='extrabold text-white text-[32px] sm:text-[56px] px-[41px] py-[10px] text-center bg-gradient-to-r from-[#E950A0] to-[#FFDE59]'>Timeline</h1>
-      </section>
+    <div className='flex flex-col pt-[70px] px-[23px] sm:px-[58px] md:pt-[156px] sm:pt-[75px]'>
+        <section className='flex flex-col justify-center text-center items-center'>
+            <h1 className='extrabold text-white text-[32px] sm:text-[56px] md:text-[64px] bg-gradient-to-r from-[#E950A0] to-[#FFDE59] py-[10px] w-[258px] sm:w-[390px] md:w-[433px]'>TIMELINE</h1>
+        </section>
       <div>
       <Image
     src={TimelineTablet}
