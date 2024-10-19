@@ -15,7 +15,7 @@ const Registration = () => {
             alt="Example Image"
             width={201} // Use state variable
             height={222}
-            className='sm:w-[324px] sm:h-[338px] md:w-[451.86px] md:h-[351px]'
+            className='sm:w-[324px] sm:h-[338px] md:w-[380] md:h-[200px]'
             />
             <div className='bg-[#AE87BA] rounded-[30px] w-[308px] sm:w-[514px] sm:h-[215px] h-[129px] py-[15px] sm:py-[30px] text-center'>
             <h1 className='extrabold text-[32px] sm:text-[56px]'>REGULAR<br/>1 PAX</h1>
@@ -32,7 +32,7 @@ const Registration = () => {
             alt="Example Image"
             width={251} // Use state variable
             height={177}
-            className='sm:w-[377px] sm:h-[265px] md:w-[451.86px] md:h-[351px]'
+            className='sm:w-[377px] sm:h-[265px] md:w-[380px] md:h-[200px]'
             />
             <div className='bg-[#AE87BA] rounded-[30px] w-[308px] sm:w-[514px] sm:h-[215px] h-[129px] py-[15px] text-center'>
             <h1 className='extrabold text-[32px] sm:text-[56px]'>DUO<br/>2 PAX</h1>
@@ -49,7 +49,7 @@ const Registration = () => {
             alt="Example Image"
             width={266} // Use state variable
             height={140}
-            className='sm:w-[505px] sm:h-[250px] md:w-[451.86px] md:h-[351px]'
+            className='sm:w-[505px] sm:h-[250px] md:w-[380] md:h-[200px]'
             />
             <div className='bg-[#AE87BA] rounded-[30px] w-[308px] sm:w-[514px] sm:h-[215px] h-[129px] py-[15px] text-center'>
             <h1 className='extrabold text-[32px] sm:text-[56px]'>GROUP<br/>10 PAX</h1>

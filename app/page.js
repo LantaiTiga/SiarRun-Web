@@ -3,6 +3,7 @@ import Hero from "./component/Hero";
 import AboutUs from "./component/AboutUs";
 import Timeline from "./component/Timeline";
 import Registration from "./component/Registration";
+import FAQ from "./component/FAQ";
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <AboutUs/>
       <Timeline/>
       <Registration/>
+      <FAQ/>
     </div>
     </>
   );
