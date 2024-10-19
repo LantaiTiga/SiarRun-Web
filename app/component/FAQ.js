@@ -21,9 +21,9 @@ const FAQ = () => {
 
   return (
     <div className="flex flex-col text-white py-[18px] px-[23px] sm:px-[58px] md:px-[64px] bg-[#181818] justify-center">
-        <section className='text-center'>
+        <section className='flex flex-col justify-center text-center items-center'>
             <h1 className='extrabold text-[32px] sm:text-[56px] md:text-[64px]'>FREQUENTLY ASKED</h1>
-            <h2 className='extrabold text-[32px] sm:text-[56px] md:text-[64px] bg-gradient-to-r from-[#E950A0] to-[#FFDE59] py-[10px] px[41px]'>QUESTIONS</h2>
+            <h2 className='extrabold text-[32px] sm:text-[56px] md:text-[64px] bg-gradient-to-r from-[#E950A0] to-[#FFDE59] py-[10px] w-[258px] sm:w-[390px] md:w-[433px]'>QUESTIONS</h2>
         </section>
         <section >
           {questions.map((question, index) => (
