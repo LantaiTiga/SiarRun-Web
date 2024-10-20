@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 export const RacePack = () => {
   return (
-    <div className="relative h-screen">
+    <div className="relative">
     {/* Background image with opacity */}
     <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${backgrund.src})`, opacity: '0.14' }}>
       {/* Overlay gradient */}
@@ -18,20 +18,20 @@ export const RacePack = () => {
             <h1 className='extrabold text-[32px] sm:text-[56px] md:text-[64px] bg-gradient-to-r from-[#E950A0] to-[#FFDE59]  py-[10px] w-[208px] sm:w-[390px] md:w-[433px]'>RACE PACK</h1>
             <h2 className='extrabold text-[32px] sm:text-[56px] md:text-[64px] '>PREVIEW</h2>
         </section>
-       <div className='pt-10 justify-center text-center items-center'>
+       <div className='pt-10 justify-center text-center items-center flex flex-col md:flex-row'>
        <Image
                     src={rp}
                     alt="Example Image"
                     width={800.99} 
                     height={300.76}
-                    className='w-full h-auto px-8 sm:w-[505px] sm:h-[307px] sm:mx-auto md:w-[420px] md:h-[260px]'
+                    className='w-full h-auto px-8  sm:mx-auto'
                     /> 
          <Image
                     src={size}
                     alt="Example Image"
                     width={360.99} 
                     height={300.76}
-                    className=' w-full h-auto px-8 sm:w-[505px] sm:h-[307px] sm:mx-auto md:w-[420px] md:h-[260px]'
+                    className=' w-full h-auto pb-4 px-8 sm:pb-20 sm:mx-auto '
                     /> 
         </div>
         </div>
