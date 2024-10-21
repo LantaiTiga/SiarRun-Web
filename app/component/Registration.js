@@ -23,9 +23,9 @@ const Registration = forwardRef((props, ref) => {
             </div>
 
             <div className='pt-[14px] sm:pt[20px]'>
-            <button className='hover:border-2 hover:border-white hover:rounded-[20px]' href='https://forms.gle/xX5ZpgCMqnpavro86'>
+            <button className='hover:border-2 hover:border-white hover:rounded-[20px]'><a href='https://forms.gle/xX5ZpgCMqnpavro86'>
             <h2 className='extrabold text-[32px] sm:text-[56px] py-[10px] px-[34px] rounded-[20px] bg-gradient-to-b from-[#9FC9DF] to-[#001099]'>150.000</h2>
-            </button>
+            </a> </button>
             </div>
             </section>
 
@@ -42,9 +42,9 @@ const Registration = forwardRef((props, ref) => {
             </div>
 
             <div className='pt-[14px] sm:pt[20px]'>
-            <button className='hover:border-2 hover:border-white hover:rounded-[20px]' href='https://forms.gle/xX5ZpgCMqnpavro86'>
+            <button className='hover:border-2 hover:border-white hover:rounded-[20px]'><a href='https://forms.gle/xX5ZpgCMqnpavro86'>
             <h2 className='extrabold text-[32px] sm:text-[56px] py-[10px] px-[34px] rounded-[20px] bg-gradient-to-b from-[#9FC9DF] to-[#001099]'>280.000</h2>
-            </button>
+            </a> </button>
             </div>
             </section>
 
@@ -61,9 +61,9 @@ const Registration = forwardRef((props, ref) => {
             </div>
 
             <div className='pt-[14px] sm:pt[20px]'>
-            <button className='hover:border-2 hover:border-white hover:rounded-[20px]' href='https://forms.gle/xX5ZpgCMqnpavro86'>
+            <button className='hover:border-2 hover:border-white hover:rounded-[20px]'><a href='https://forms.gle/xX5ZpgCMqnpavro86'>
             <h2 className='extrabold text-[32px] sm:text-[56px] py-[10px] px-[34px] rounded-[20px] bg-gradient-to-b from-[#9FC9DF] to-[#001099]'>1.200.000</h2>
-            </button>
+            </a> </button>
             </div>
             </section>
 
