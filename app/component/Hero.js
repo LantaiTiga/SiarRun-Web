@@ -1,12 +1,10 @@
 import React, { forwardRef } from 'react'
 import HeroImg from '../public/Hero.png'
-import HeroTitle from '../public/TitleHero.svg'
 import Image from 'next/image'
 
 const Hero = forwardRef((props, ref) => {
   return (
-    <>
-    <div className='relative'>
+    <div className='relative' ref={ref}>
       <div className='absolute inset-0 bg-gradient-to-b from-transparent to-[#0E0E0E] via-transparent'></div>
       <Image
         src={HeroImg}
@@ -16,8 +14,6 @@ const Hero = forwardRef((props, ref) => {
         height={50} 
       />
     </div>
-    </>   
-
   )
 })
 

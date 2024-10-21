@@ -31,7 +31,7 @@ const FAQ = forwardRef((props, ref) => {
   ];
 
   return (
-    <div className="flex flex-col  h-full text-white py-[18px] px-[23px] sm:px-[58px] md:px-[64px] justify-center" ref={ref}>
+    <div className="flex flex-col text-white py-[18px] px-[23px] sm:px-[58px] md:px-[64px] justify-center" ref={ref}>
         <section className='flex flex-col justify-center text-center items-center py-[10px] md:py-[70px]'>
             <h1 className='extrabold text-[32px] sm:text-[56px] md:text-[64px]'>FREQUENTLY ASKED</h1>
             <h2 className='extrabold text-[32px] sm:text-[56px] md:text-[64px] bg-gradient-to-r from-[#E950A0] to-[#FFDE59] py-[10px] w-[258px] sm:w-[390px] md:w-[433px]'>QUESTIONS</h2>
@@ -53,9 +53,9 @@ const FAQ = forwardRef((props, ref) => {
                />
               </button>
 
-              <div className={`regular-italic overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-40' : 'max-h-0'}`}>
+              <div className={`regular-italic h-max overflow-hidden transition-all duration-300 h-full ${openIndex === index ? 'max-h-40' : 'max-h-0'}`}>
                 {openIndex === index && (
-                  <p className="text-[16px] sm:text-[32px] md:text-[40px] px-4 sm:h-full sm:py-1 pb-4 border-t-0 rounded-t-none border border-white rounded-lg shadow-lg">
+                  <p className="text-[16px] sm:text-[32px] md:text-[40px] px-4 pb-4 border-t-0 rounded-t-none border border-white rounded-lg shadow-lg">
                     {answers[index]}  {/* Updated to use the answers array */}
                   </p>
                 )}
