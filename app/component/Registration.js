@@ -1,68 +1,43 @@
 import React from 'react'
+import backgrund from '../public/BgRacePackImg.svg'
+import rp from '../public/RacepackImg.svg'
+import size from '../public/UkuranImg.svg'
 import Image from 'next/image'
-import Sigle from '../public/ImgSingle.svg'
-import Duo from '../public/ImgDuo.svg'
-import Group from '../public/ImgGroup.svg'
 
-const Registration = () => {
+export const RacePack = () => {
   return (
-    <section className='text-white px-[23px] sm:px-[58px] md:px-[64px] pt-[35px] sm:pt-[50px] md:pt-[195px] pb-[103px] sm:pb-[50px] md:pb-[347px]'>
-        <ul className='flex flex-col sm:flex-col md:flex-row gap-[46px] md:justify-center'>
-            
-            <section className='flex flex-col items-center text-center'>
-            <Image
-            src={Sigle}
-            alt="Example Image"
-            width={201} // Use state variable
-            height={222}
-            className='sm:w-[324px] sm:h-[338px] md:w-[380] md:h-[200px]'
-            />
-            <div className='bg-[#AE87BA] rounded-[30px] w-[308px] sm:w-[514px] sm:h-[215px] h-[129px] py-[15px] sm:py-[30px] text-center'>
-            <h1 className='extrabold text-[32px] sm:text-[56px]'>REGULAR<br/>1 PAX</h1>
-            </div>
+    <div className="relative md:pt-[70px]">
+    {/* Background image with opacity */}
+    <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${backgrund.src})`, opacity: '0.14' }}>
+      {/* Overlay gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0E0E0E]"></div>
+    </div>
 
-            <div className='pt-[14px] sm:pt[20px]'>
-            <h2 className='extrabold text-[32px] sm:text-[56px] py-[10px] px-[34px] rounded-[20px] bg-gradient-to-b from-[#9FC9DF] to-[#001099]'>150.000</h2>
-            </div>
-            </section>
-
-            <section className='flex flex-col items-center text-center'>
-            <Image
-            src={Duo}
-            alt="Example Image"
-            width={251} // Use state variable
-            height={177}
-            className='sm:w-[377px] sm:h-[265px] md:w-[380px] md:h-[200px]'
-            />
-            <div className='bg-[#AE87BA] rounded-[30px] w-[308px] sm:w-[514px] sm:h-[215px] h-[129px] py-[15px] text-center'>
-            <h1 className='extrabold text-[32px] sm:text-[56px]'>DUO<br/>2 PAX</h1>
-            </div>
-
-            <div className='pt-[14px] sm:pt[20px]'>
-            <h2 className='extrabold text-[32px] sm:text-[56px] py-[10px] px-[34px] rounded-[20px] bg-gradient-to-b from-[#9FC9DF] to-[#001099]'>150.000</h2>
-            </div>
-            </section>
-
-            <section className='flex flex-col items-center text-center'>
-            <Image
-            src={Group}
-            alt="Example Image"
-            width={266} // Use state variable
-            height={140}
-            className='sm:w-[505px] sm:h-[250px] md:w-[380] md:h-[200px]'
-            />
-            <div className='bg-[#AE87BA] rounded-[30px] w-[308px] sm:w-[514px] sm:h-[215px] h-[129px] py-[15px] text-center'>
-            <h1 className='extrabold text-[32px] sm:text-[56px]'>GROUP<br/>10 PAX</h1>
-            </div>
-
-            <div className='pt-[14px] sm:pt[20px]'>
-            <h2 className='extrabold text-[32px] sm:text-[56px] py-[10px] px-[34px] rounded-[20px] bg-gradient-to-b from-[#9FC9DF] to-[#001099]'>150.000</h2>
-            </div>
-            </section>
-
-        </ul>
-    </section>
+    <div className="z-10 extrabold text-white items-center justify-center pt-10">
+    <section className='flex flex-col justify-center text-center items-center'>
+            <h1 className='extrabold text-[32px] sm:text-[56px] md:text-[64px] bg-gradient-to-r from-[#E950A0] to-[#FFDE59]  py-[10px] w-[208px] sm:w-[390px] md:w-[433px]'>RACE PACK</h1>
+            <h2 className='extrabold text-[32px] sm:text-[56px] md:text-[64px] '>PREVIEW</h2>
+        </section>
+       <div className='pt-10 justify-center text-center items-center flex flex-col md:flex-row'>
+       <Image
+                    src={rp}
+                    alt="Example Image"
+                    width={800.99} 
+                    height={300.76}
+                    className='w-full h-auto px-8  sm:mx-auto'
+                    /> 
+         <Image
+                    src={size}
+                    alt="Example Image"
+                    width={360.99} 
+                    height={300.76}
+                    className=' w-full h-auto pb-4 px-8 sm:pb-20 sm:mx-auto '
+                    /> 
+        </div>
+        </div>
+ </div>
+  
   )
 }
 
-export default Registration
+export default RacePack
