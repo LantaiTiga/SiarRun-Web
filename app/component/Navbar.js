@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Logo from '../public/IconLogo.svg'
+import Link from 'next/link'
 
 const Navbar = () => {
   return (
@@ -13,11 +14,11 @@ const Navbar = () => {
         className='sm:w-[61px] sm:h-[39px] md:w-[105px] md:h-[73px]'/>
       
         <ul className='regular-italic flex text-[10px] items-center gap-[13px] sm:text-[16px] sm:gap-[32px] md:text-[23px] md:gap-[64px]'>
-            <li><a href='#' className=' hover:border-b-2 hover:border-white '>Home</a></li>
-            <li><a href='#' className=' hover:border-b-2 hover:border-white '>About Us</a></li>
-            <li><a href='#' className=' hover:border-b-2 hover:border-white '>Timeline</a></li>
-            <li><a href='#' className=' hover:border-b-2 hover:border-white '>Registration</a></li>
-            <li><a href='#' className=' hover:border-b-2 hover:border-white '>FAQ</a></li>
+            <li><Link href='Hero' scroll={false} className=' hover:border-b-2 hover:border-white '>Home</Link></li>
+            <li><Link href='AboutUs' scroll={false} className=' hover:border-b-2 hover:border-white '>About Us</Link></li>
+            <li><Link href='Timeline' scroll={false} className=' hover:border-b-2 hover:border-white '>Timeline</Link></li>
+            <li><Link href='Registration' scroll={false} className=' hover:border-b-2 hover:border-white '>Registration</Link></li>
+            <li><Link href='FAQ' scroll={false} className=' hover:border-b-2 hover:border-white '>FAQ</Link></li>
         </ul>
     </nav>
   )

@@ -11,16 +11,27 @@ const FAQ = () => {
   };
 
   const questions = [
-    "Kapan hari terakhir pendaftaran?",
-    "Kapan hari terakhir pendaftaran?",
-    "Kapan hari terakhir pendaftaran?",
-    "Kapan hari terakhir pendaftaran?",
-    "Kapan hari terakhir pendaftaran?"
+    "Bagaimana sistem lari virtual?",
+    "Bagaimana cara mendaftar?",
+    "Kapan saya bisa mulai berlari?",
+    "Bagaimana cara mencatat jarak lari saya?",
+    "Apakah saya bisa mengajak teman untuk ikut?",
+    "Apakah semua peserta akan mendapatkan medali dan racepack?",
+    "Bagaimana sistem lomba konten yang diadakan?"
   ];
 
+  const answers = [
+    "Peserta dapat berlari di lokasi dan waktu yang dipilih serta mencatat waktu serta jarak menggunakan aplikasi atau perangkat pelacak secara mandiri.",
+    "Kamu bisa daftar melalui web resmi kami lho! Pilih menu Register Now lalu  pilih kategori lari yang ingin diikuti, isi formulir pendaftaran, dan lakukan pembayaran.",
+    "Kamu bisa lari kapan saja! Tapi ingat ya runners, sesuaikan dengan jangka waktu berlari yang telah ditentukan yaitu pada 22 Desember - 25 Desember 2024.",
+    "Runners dapat mencatat jarak dan waktu menggunakan aplikasi Strava.",
+    "Tentu saja! Kamu dapat mengajak teman, pasangan atau keluarga untuk berlari bersama atau bahkan membuat tim untuk mengikuti group package and get a cheaper price!.",
+    "Dont worry runners! Semua peserta akan mendapatkan medali finisher dan racepack sebelum tenggat waktu lari.",
+    ""
+  ];
 
   return (
-    <div className="flex flex-col text-white py-[18px] px-[23px] sm:px-[58px] md:px-[64px] justify-center">
+    <div className="flex flex-col  h-full text-white py-[18px] px-[23px] sm:px-[58px] md:px-[64px] justify-center">
         <section className='flex flex-col justify-center text-center items-center py-[10px] md:py-[70px]'>
             <h1 className='extrabold text-[32px] sm:text-[56px] md:text-[64px]'>FREQUENTLY ASKED</h1>
             <h2 className='extrabold text-[32px] sm:text-[56px] md:text-[64px] bg-gradient-to-r from-[#E950A0] to-[#FFDE59] py-[10px] w-[258px] sm:w-[390px] md:w-[433px]'>QUESTIONS</h2>
@@ -44,8 +55,8 @@ const FAQ = () => {
 
               <div className={`regular-italic overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-40' : 'max-h-0'}`}>
                 {openIndex === index && (
-                  <p className="text-[16px] sm:text-[32px] md:text-[40px] px-4 pb-4 border-t-0 rounded-t-none border border-white rounded-lg shadow-lg">
-                    asdasdasid
+                  <p className="text-[16px] sm:text-[32px] md:text-[40px] px-4 sm:h-full sm:py-1 pb-4 border-t-0 rounded-t-none border border-white rounded-lg shadow-lg">
+                    {answers[index]}  {/* Updated to use the answers array */}
                   </p>
                 )}
               </div>
