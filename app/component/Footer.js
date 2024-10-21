@@ -8,9 +8,8 @@ import Image from 'next/image'
 const Footer = () => {
   return (
     
-    <footer className='flex flex-col '>
-
-        <section className='flex flex-row text-white py-[18px] px-[23px] sm:px-[58px] md:px-[64px] justify-between items-center text-center  bg-gradient-to-r from-[#438DB4] to-[#E951A0]'>
+    <footer className='flex flex-col  bg-gradient-to-r from-[#438DB4] to-[#E951A0] '>
+    <section className='flex flex-row text-white py-[18px] px-[23px] sm:px-[58px] md:px-[64px] justify-between items-center text-center bg-gradient-to-t from-transparent to-[#181818] '>
         <Image
         src={LogoIcon}
         alt="Logo"
@@ -21,24 +20,24 @@ const Footer = () => {
         <div>
             <h2 className='extra-light text-[10px] sm:text-[16px] md:text-[32px]'>Visit our social media</h2>
             <ul className='flex justify-between justify-items-center pt-[20px]'>
-                <li>        <Image
+                <li>      <a href='#'><Image
         src={TikTokIcon}
         alt="Logo"
         width={27} // Use state variable
         height={27}
-        className='sm:w-[66px] sm:h-[52px] md:w-[115px] md:h-[93px]'/></li>
-                <li>        <Image
+        className='sm:w-[66px] sm:h-[52px] md:w-[115px] md:h-[93px]'/></a></li>
+                <li>        <a href='https://www.instagram.com/siarrun/'><Image
         src={InstagramIcon}
         alt="Logo"
         width={21} // Use state variable
         height={21}
-        className='sm:w-[61px] sm:h-[39px] md:w-[105px] md:h-[73px]'/></li>
-                <li>        <Image
+        className='sm:w-[61px] sm:h-[39px] md:w-[105px] md:h-[73px]'/></a></li>
+                <li>       <a href='#'><Image
         src={SpotifyIcon}
         alt="Logo"
         width={21} // Use state variable
         height={21}
-        className='sm:w-[61px] sm:h-[39px] md:w-[105px] md:h-[73px]'/></li>
+        className='sm:w-[61px] sm:h-[39px] md:w-[105px] md:h-[73px]'/></a></li>
             </ul>
         </div>
         </section>
