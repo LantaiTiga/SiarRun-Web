@@ -1,9 +1,9 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState, forwardRef } from 'react'
 import ArrowDown from '../public/IconArrowDown.svg'
 import Image from 'next/image'
 
-const FAQ = () => {
+const FAQ = forwardRef((props, ref) => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleDropdown = (index) => {
@@ -31,7 +31,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="flex flex-col  h-full text-white py-[18px] px-[23px] sm:px-[58px] md:px-[64px] justify-center">
+    <div className="flex flex-col  h-full text-white py-[18px] px-[23px] sm:px-[58px] md:px-[64px] justify-center" ref={ref}>
         <section className='flex flex-col justify-center text-center items-center py-[10px] md:py-[70px]'>
             <h1 className='extrabold text-[32px] sm:text-[56px] md:text-[64px]'>FREQUENTLY ASKED</h1>
             <h2 className='extrabold text-[32px] sm:text-[56px] md:text-[64px] bg-gradient-to-r from-[#E950A0] to-[#FFDE59] py-[10px] w-[258px] sm:w-[390px] md:w-[433px]'>QUESTIONS</h2>
@@ -64,7 +64,7 @@ const FAQ = () => {
           ))}
         </section>
     </div>
-  )
-}
+  );
+});
 
 export default FAQ

@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import Image from 'next/image'
 import ImgAboutUs from '../public/ImgAboutUs.svg'
 import ImgMotherMiles from '../public/ImgMotherMiles.svg'
 
-const AboutUs = () => {
+const AboutUs = forwardRef((props, ref) => {
   return (
-<div className='text-white flex flex-col px-[23px] sm:px-[58px] md:px-[64px]'>
+<div className='text-white flex flex-col px-[23px] sm:px-[58px] md:px-[64px]' ref={ref}>
       
       <div className='sm:flex sm:justify-between sm:gap-[58px] md:gap-[401px]'>
       <section>
@@ -46,6 +46,6 @@ const AboutUs = () => {
 
     </div>
   )
-}
+})
 
 export default AboutUs

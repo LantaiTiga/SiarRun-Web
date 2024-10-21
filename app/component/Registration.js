@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import Image from 'next/image'
 import Sigle from '../public/ImgSingle.svg'
 import Duo from '../public/ImgDuo.svg'
 import Group from '../public/ImgGroup.svg'
 
-const Registration = () => {
+const Registration = forwardRef((props, ref) => {
   return (
-    <section className='text-white px-[23px] sm:px-[58px] md:px-[64px] pt-[35px] sm:pt-[50px] md:pt-[195px] pb-[103px] sm:pb-[50px] md:pb-[347px]'>
+    <section ref={ref} className='text-white px-[23px] sm:px-[58px] md:px-[64px] pt-[35px] sm:pt-[50px] md:pt-[195px] pb-[103px] sm:pb-[50px] md:pb-[347px]'>
         <ul className='flex flex-col sm:flex-col md:flex-row gap-[46px] md:justify-center'>
             
             <section className='flex flex-col items-center text-center'>
@@ -39,7 +39,7 @@ const Registration = () => {
             </div>
 
             <div className='pt-[14px] sm:pt[20px]'>
-            <h2 className='extrabold text-[32px] sm:text-[56px] py-[10px] px-[34px] rounded-[20px] bg-gradient-to-b from-[#9FC9DF] to-[#001099]'>150.000</h2>
+            <h2 className='extrabold text-[32px] sm:text-[56px] py-[10px] px-[34px] rounded-[20px] bg-gradient-to-b from-[#9FC9DF] to-[#001099]'>280.000</h2>
             </div>
             </section>
 
@@ -56,13 +56,13 @@ const Registration = () => {
             </div>
 
             <div className='pt-[14px] sm:pt[20px]'>
-            <h2 className='extrabold text-[32px] sm:text-[56px] py-[10px] px-[34px] rounded-[20px] bg-gradient-to-b from-[#9FC9DF] to-[#001099]'>150.000</h2>
+            <h2 className='extrabold text-[32px] sm:text-[56px] py-[10px] px-[34px] rounded-[20px] bg-gradient-to-b from-[#9FC9DF] to-[#001099]'>1.200.000</h2>
             </div>
             </section>
 
         </ul>
     </section>
   )
-}
+})
 
 export default Registration
