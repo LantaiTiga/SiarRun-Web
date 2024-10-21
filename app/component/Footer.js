@@ -14,8 +14,8 @@ const Footer = () => {
         <Image
         src={LogoIcon}
         alt="Logo"
-        width={21} // Use state variable
-        height={21}
+        width={38} // Use state variable
+        height={24.65}
         className='sm:w-[61px] sm:h-[39px] md:w-[105px] md:h-[73px]'/>
         <h1 className='semi-bold-italic text-[16px] sm:text-[32px] md:text-[64px]'>#Mother’s Day Miles</h1>
         <div>
@@ -24,9 +24,9 @@ const Footer = () => {
                 <li>        <Image
         src={TikTokIcon}
         alt="Logo"
-        width={21} // Use state variable
-        height={21}
-        className='sm:w-[61px] sm:h-[39px] md:w-[105px] md:h-[73px]'/></li>
+        width={27} // Use state variable
+        height={27}
+        className='sm:w-[66px] sm:h-[52px] md:w-[115px] md:h-[93px]'/></li>
                 <li>        <Image
         src={InstagramIcon}
         alt="Logo"
