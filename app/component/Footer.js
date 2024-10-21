@@ -20,7 +20,7 @@ const Footer = () => {
         <div>
             <h2 className='extra-light text-[10px] sm:text-[16px] md:text-[32px]'>Visit our social media</h2>
             <ul className='flex justify-between justify-items-center pt-[20px]'>
-                <li>      <a href='#'><Image
+                <li>      <a href='https://www.tiktok.com/@siarrun?_t=8qjQAfpg9VX&_r=1'><Image
         src={TikTokIcon}
         alt="Logo"
         width={27} // Use state variable
@@ -32,7 +32,7 @@ const Footer = () => {
         width={21} // Use state variable
         height={21}
         className='sm:w-[61px] sm:h-[39px] md:w-[105px] md:h-[73px]'/></a></li>
-                <li>       <a href='#'><Image
+                <li>       <a href='https://open.spotify.com/user/31yv6tziq4q5rln7vqvfcmktu5ia?si=oDjDLjNrTZuJb157nNBIxg'><Image
         src={SpotifyIcon}
         alt="Logo"
         width={21} // Use state variable
