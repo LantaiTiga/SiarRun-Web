@@ -9,6 +9,7 @@ const Registration = forwardRef((props, ref) => {
     <section ref={ref} className='text-white px-[23px] sm:px-[58px] md:px-[64px] pt-[35px] sm:pt-[50px] md:pt-[195px] pb-[103px] sm:pb-[50px] md:pb-[347px]'>
         <ul className='flex flex-col sm:flex-col md:flex-row gap-[46px] justify-between'>
             
+            
             <section className='flex flex-col items-center text-center'>
             <Image
             src={Sigle}
@@ -22,7 +23,9 @@ const Registration = forwardRef((props, ref) => {
             </div>
 
             <div className='pt-[14px] sm:pt[20px]'>
+            <button className='hover:border-2 hover:border-white hover:rounded-[20px]' href=''>
             <h2 className='extrabold text-[32px] sm:text-[56px] py-[10px] px-[34px] rounded-[20px] bg-gradient-to-b from-[#9FC9DF] to-[#001099]'>150.000</h2>
+            </button>
             </div>
             </section>
 
@@ -39,7 +42,9 @@ const Registration = forwardRef((props, ref) => {
             </div>
 
             <div className='pt-[14px] sm:pt[20px]'>
+            <button className='hover:border-2 hover:border-white hover:rounded-[20px]' href=''>
             <h2 className='extrabold text-[32px] sm:text-[56px] py-[10px] px-[34px] rounded-[20px] bg-gradient-to-b from-[#9FC9DF] to-[#001099]'>280.000</h2>
+            </button>
             </div>
             </section>
 
@@ -56,7 +61,9 @@ const Registration = forwardRef((props, ref) => {
             </div>
 
             <div className='pt-[14px] sm:pt[20px]'>
+            <button className='hover:border-2 hover:border-white hover:rounded-[20px]' href=''>
             <h2 className='extrabold text-[32px] sm:text-[56px] py-[10px] px-[34px] rounded-[20px] bg-gradient-to-b from-[#9FC9DF] to-[#001099]'>1.200.000</h2>
+            </button>
             </div>
             </section>
 

@@ -53,10 +53,10 @@ const FAQ = forwardRef((props, ref) => {
                />
               </button>
 
-              <div className={`regular-italic h-max overflow-hidden transition-all duration-300 h-full ${openIndex === index ? 'max-h-40' : 'max-h-0'}`}>
+              <div className={`regular-italic h-max overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-40' : 'max-h-0'}`}>
                 {openIndex === index && (
                   <p className="text-[16px] sm:text-[32px] md:text-[40px] px-4 pb-4 border-t-0 rounded-t-none border border-white rounded-lg shadow-lg">
-                    {answers[index]}  {/* Updated to use the answers array */}
+                    {answers[index]}
                   </p>
                 )}
               </div>
