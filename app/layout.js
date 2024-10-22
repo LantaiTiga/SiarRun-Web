@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
   title: "SIAR RUN",
@@ -10,6 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-[#0E0E0E]">
         {children}
+        <Analytics />
       </body>
     </html>
   );
